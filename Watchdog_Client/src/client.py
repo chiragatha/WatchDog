@@ -15,21 +15,21 @@ import json
 import threading
 
 config = {
-    "apiKey": "AIzaSyDwJhRaVMa_RSN8KrKhkFhQ4NUsCTQaCIQ",
+    "apiKey": "apikey",
     "authDomain": "raspconnect-3850a.firebaseapp.com",
     "databaseURL": "https://raspconnect-3850a.firebaseio.com",
     "projectId": "raspconnect-3850a",
     "storageBucket": "raspconnect-3850a.appspot.com",
     "serviceAccount": "raspconnect-3850a-firebase-adminsdk-qf2om-c974c2b381.json",
-    "messagingSenderId": "531382239611",
-    "appId": "1:531382239611:web:b3075a4b76fd57eabf3dde",
-    "measurementId": "G-7FNNPJ9NJL"
+    "messagingSenderId": "senderid",
+    "appId": "appID",
+    "measurementId": "measurementID"
 }
 firebase = pyrebase.initialize_app(config)
 storage = firebase.storage()
 cred = credentials.Certificate("raspconnect-3850a-firebase-adminsdk-qf2om-c974c2b381.json")
 firebase_admin.initialize_app(cred, {
-    "databaseURL": "https://raspconnect-3850a.firebaseio.com",
+    "databaseURL": "dbURL",
     "databaseAuthVariableOverride": None
 })
 db = firebase.database()
