@@ -11,15 +11,15 @@ from firebase_admin import firestore
 from src.utils import Patient
 
 config={
-    "apiKey": "AIzaSyDwJhRaVMa_RSN8KPatientrKhkFhQ4NUsCTQaCIQ",
+    "apiKey": "apikey",
     "authDomain": "raspconnect-3850a.firebaseapp.com",
-    "databaseURL": "https://raspconnect-3850a.firebaseio.com",
+    "databaseURL": "dburl",
     "projectId": "raspconnect-3850a",
     "storageBucket": "raspconnect-3850a.appspot.com",
     "serviceAccount": "/home/chirag/Documents/Code_new/WatchDog_Server/src/raspconnect-3850a-firebase-adminsdk-qf2om-c974c2b381.json",
-    "messagingSenderId": "531382239611",
-    "appId": "1:531382239611:web:b3075a4b76fd57eabf3dde",
-    "measurementId": "G-7FNNPJ9NJL"
+    "messagingSenderId": "messagingsenderid",
+    "appId": "appid",
+    "measurementId": "measurementID"
 }
 
 firebase=pyrebase.initialize_app(config)
